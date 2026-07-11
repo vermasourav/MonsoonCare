@@ -2,7 +2,7 @@ package com.monsoon.care.ui.activities;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.widget.Switch;
+import com.google.android.material.switchmaterial.SwitchMaterial;
 import android.widget.Spinner;
 import android.widget.Button;
 import android.widget.ArrayAdapter;
@@ -15,7 +15,7 @@ import com.monsoon.care.R;
 public class SettingsActivity extends AppCompatActivity {
 
     private SharedPreferences sharedPreferences;
-    private Switch notificationsSwitch, locationSwitch, highContrastSwitch;
+    private SwitchMaterial notificationsSwitch, locationSwitch, highContrastSwitch;
     private Spinner languageSpinner, textSizeSpinner;
     private Button saveButton;
 

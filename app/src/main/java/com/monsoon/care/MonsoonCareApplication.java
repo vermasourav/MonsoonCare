@@ -26,9 +26,13 @@ public class MonsoonCareApplication extends Application {
 
     private void initializeCrashHandler() {
         // Setup global exception handler for uncaught exceptions
+        Thread.UncaughtExceptionHandler defaultHandler = Thread.getDefaultUncaughtExceptionHandler();
         Thread.setDefaultUncaughtExceptionHandler((thread, exception) -> {
             Logger.e(exception, "Uncaught Exception");
             // Send to crash analytics
+            if (defaultHandler != null) {
+                defaultHandler.uncaughtException(thread, exception);
+            }
         });
     }
 }

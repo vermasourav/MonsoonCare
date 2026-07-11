@@ -2,7 +2,4 @@
 <full-backup-content>
     <include domain="sharedpref" path="monsoon_prefs"/>
     <include domain="database" path="monsoon_care_db"/>
-    <exclude domain="sharedpref" path="firebase"/>
-    <exclude domain="database" path="firebase"/>
 </full-backup-content>
-
