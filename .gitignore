@@ -1,0 +1,51 @@
+# Gradle files
+.gradle/
+build/
+*.apk
+*.aar
+*.ap_
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log/OS Files
+*.log
+.DS_Store
+
+# Android Studio generated files and folders
+.idea/
+.classpath
+.c9/
+*.class
+*.jar
+*.so
+*.swp
+*~
+.settings/
+.gradle
+.idea/
+bin/
+gen/
+local.properties
+proguard-rules.txt
+
+# Captures
+captures/
+.externalNativeBuild
+.cxx/
+
+# Intellij Idea (see https://intellij-support.jetbrains.com/hc/en-us/articles/206544839)
+*.iml
+*.iws
+*.ipr
+*~
+*.swp
+
+# NPM
+node_modules/
+npm-debug.log
+
+# Keystore files
+*.jks
+*.keystore
+

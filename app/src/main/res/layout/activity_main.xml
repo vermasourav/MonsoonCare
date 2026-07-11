@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header with location -->
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location: Unknown"
+            android:textSize="16sp"
+            android:gravity="center" />
+
+        <!-- Weather Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:background="@drawable/card_background"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/weather_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="Weather Icon"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/weather_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28°C"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/weather_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Partly Cloudy"
+                android:textSize="18sp"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+        <!-- Quick Actions Grid -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btn_weather_detail"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="Weather\nDetails" />
+
+            <Button
+                android:id="@+id/btn_preparedness"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="Preparedness\nPlan" />
+
+            <Button
+                android:id="@+id/btn_checklist"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="Emergency\nChecklist" />
+
+            <Button
+                android:id="@+id/btn_travel_advisory"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="Travel\nAdvisory" />
+
+            <Button
+                android:id="@+id/btn_community"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="Community\nAssistance" />
+
+            <Button
+                android:id="@+id/btn_ai_assistant"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="AI Safety\nAssistant" />
+
+        </GridLayout>
+
+        <!-- Alerts Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Alerts"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/alerts_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+</ScrollView>
+

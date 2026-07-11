@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Monsoon Mitra</string>
+    <string name="app_description">AI-Powered Monsoon Preparedness &amp; Citizen Assistant</string>
+
+    <!-- Onboarding -->
+    <string name="select_language">Select Your Language</string>
+    <string name="select_location">Select Your Location</string>
+    <string name="allow_permissions">Allow Permissions</string>
+    <string name="family_setup">Family Setup</string>
+
+    <!-- Main Dashboard -->
+    <string name="current_weather">Current Weather</string>
+    <string name="weather_details">Weather Details</string>
+    <string name="preparedness_plan">Preparedness Plan</string>
+    <string name="emergency_checklist">Emergency Checklist</string>
+    <string name="travel_advisory">Travel Advisory</string>
+    <string name="community_assistance">Community Assistance</string>
+    <string name="ai_safety_assistant">AI Safety Assistant</string>
+    <string name="current_alerts">Current Alerts</string>
+
+    <!-- Weather -->
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="rain_probability">Rain Probability</string>
+    <string name="feels_like">Feels Like</string>
+
+    <!-- Alerts -->
+    <string name="heavy_rain">Heavy Rain</string>
+    <string name="flood_warning">Flood Warning</string>
+    <string name="cyclone_alert">Cyclone Alert</string>
+    <string name="lightning_alert">Lightning Alert</string>
+    <string name="landslide_warning">Landslide Warning</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="location_services">Location Services</string>
+    <string name="language">Language</string>
+    <string name="text_size">Text Size</string>
+    <string name="accessibility">Accessibility</string>
+    <string name="high_contrast_mode">High Contrast Mode</string>
+
+    <!-- Buttons -->
+    <string name="next">Next</string>
+    <string name="continue_text">Continue</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="logout">Logout</string>
+
+    <!-- Messages -->
+    <string name="location_permission_required">Location permission is required</string>
+    <string name="notification_permission_required">Notification permission is required</string>
+    <string name="offline_mode">Offline Mode - Some features may not be available</string>
+    <string name="loading">Loading...</string>
+    <string name="error">Error</string>
+    <string name="retry">Retry</string>
+
+</resources>
+

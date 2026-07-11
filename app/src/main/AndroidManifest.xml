@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.monsoon.care">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MonsoonCareApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MonsoonCare"
+        android:usesCleartextTraffic="false">
+
+        <!-- Splash Activity -->
+        <activity
+            android:name=".ui.activities.SplashActivity"
+            android:exported="true"
+            android:noHistory="true"
+            android:theme="@style/Theme.MonsoonCare.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Onboarding Activity -->
+        <activity
+            android:name=".ui.activities.OnboardingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MonsoonCare.NoActionBar" />
+
+        <!-- Main Dashboard Activity -->
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MonsoonCare" />
+
+        <!-- Weather Detail Activity -->
+        <activity
+            android:name=".ui.activities.WeatherDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MonsoonCare" />
+
+        <!-- Preparedness Planner Activity -->
+        <activity
+            android:name=".ui.activities.PreparednessActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MonsoonCare" />
+
+        <!-- Emergency Checklist Activity -->
+        <activity
+            android:name=".ui.activities.ChecklistActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MonsoonCare" />
+
+        <!-- Travel Advisory Activity -->
+        <activity
+            android:name=".ui.activities.TravelAdvisoryActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MonsoonCare" />
+
+        <!-- Community Assistance Activity -->
+        <activity
+            android:name=".ui.activities.CommunityActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MonsoonCare" />
+
+        <!-- Settings Activity -->
+        <activity
+            android:name=".ui.activities.SettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MonsoonCare" />
+
+        <!-- AI Safety Assistant Activity -->
+        <activity
+            android:name=".ui.activities.AISafetyAssistantActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MonsoonCare" />
+
+        <!-- Location Selection Activity -->
+        <activity
+            android:name=".ui.activities.LocationSelectionActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MonsoonCare" />
+
+        <!-- Firebase Cloud Messaging Service -->
+        <service
+            android:name=".services.MonsoonFirebaseService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- Location Update Service -->
+        <service
+            android:name=".services.LocationUpdateService"
+            android:exported="false" />
+
+        <!-- Weather Sync Work Service -->
+        <service
+            android:name=".services.WeatherSyncService"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
+
