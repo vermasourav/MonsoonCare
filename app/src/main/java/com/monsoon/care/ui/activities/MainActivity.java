@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         alertsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         alertAdapter = new AlertAdapter(new ArrayList<>());
         alertsRecyclerView.setAdapter(alertAdapter);
-    }
+
         // Accessibility improvements: announce temperature updates and provide descriptions
         weatherTemp.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
         weatherIcon.setContentDescription(getString(R.string.desc_weather_icon));
@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         travelAdvisoryBtn.setContentDescription(getString(R.string.desc_travel_advisory));
         communityBtn.setContentDescription(getString(R.string.desc_community_assistance));
         aiAssistantBtn.setContentDescription(getString(R.string.desc_ai_safety_assistant));
+    }
 
     private void setupClickListeners() {
         weatherDetailBtn.setOnClickListener(v ->
