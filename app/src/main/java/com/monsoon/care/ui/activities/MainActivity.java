@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         // Placeholder - will be replaced with actual API call
         List<Alert> alerts = new ArrayList<>();
         alerts.add(new Alert("1", "HEAVY_RAIN", "HIGH", "Heavy Rain Alert",
-                "Heavy rainfall expected in your area", "Your Location", System.currentTimeMillis() + ""));
+                "Heavy rainfall expected in your area", "Your Location", System.currentTimeMillis()));
         alertAdapter.setAlerts(alerts);
     }
 

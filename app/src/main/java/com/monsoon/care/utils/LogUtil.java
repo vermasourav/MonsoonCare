@@ -28,7 +28,8 @@ public class LogUtil {
     }
 
     public static void json(String tag, String json) {
-        Logger.json("[" + tag + "] ", json);
+        Logger.d("[" + tag + "]");
+        Logger.json(json);
     }
 }
 
