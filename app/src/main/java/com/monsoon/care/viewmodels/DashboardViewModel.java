@@ -22,8 +22,12 @@ public class DashboardViewModel extends AndroidViewModel {
     private MutableLiveData<String> errorMessage;
 
     public DashboardViewModel(Application application) {
+        this(application, new WeatherRepository());
+    }
+
+    public DashboardViewModel(Application application, WeatherRepository weatherRepository) {
         super(application);
-        weatherRepository = new WeatherRepository();
+        this.weatherRepository = weatherRepository;
         currentWeatherLiveData = new MutableLiveData<>();
         alertsLiveData = new MutableLiveData<>();
         loadingState = new MutableLiveData<>(false);
