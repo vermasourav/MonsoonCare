@@ -115,4 +115,3 @@ dependencies {
 
 // Apply Google Services plugin
 apply plugin: 'com.google.gms.google-services'
-
