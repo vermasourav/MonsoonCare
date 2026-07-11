@@ -18,6 +18,14 @@
     <string name="community_assistance">Community Assistance</string>
     <string name="ai_safety_assistant">AI Safety Assistant</string>
     <string name="current_alerts">Current Alerts</string>
+    <!-- Accessibility descriptions for important UI elements -->
+    <string name="desc_weather_icon">Current weather icon</string>
+    <string name="desc_weather_details">Open detailed weather screen</string>
+    <string name="desc_preparedness_plan">View your preparedness plan</string>
+    <string name="desc_emergency_checklist">Open emergency checklist</string>
+    <string name="desc_travel_advisory">Open travel advisory information</string>
+    <string name="desc_community_assistance">Open community assistance</string>
+    <string name="desc_ai_safety_assistant">Open AI safety assistant</string>
 
     <!-- Weather -->
     <string name="temperature">Temperature</string>

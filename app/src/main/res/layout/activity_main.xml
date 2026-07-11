@@ -17,7 +17,9 @@
             android:layout_height="wrap_content"
             android:text="Location: Unknown"
             android:textSize="16sp"
-            android:gravity="center" />
+            android:gravity="center"
+            android:importantForAccessibility="yes"
+            android:accessibilityHeading="true" />
 
         <!-- Weather Card -->
         <LinearLayout
@@ -33,7 +35,8 @@
                 android:id="@+id/weather_icon"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:contentDescription="Weather Icon"
+                android:contentDescription="@string/desc_weather_icon"
+                android:importantForAccessibility="yes"
                 android:src="@mipmap/ic_launcher" />
 
             <TextView
@@ -43,7 +46,9 @@
                 android:text="28°C"
                 android:textSize="32sp"
                 android:textStyle="bold"
-                android:layout_marginTop="8dp" />
+                android:layout_marginTop="8dp"
+                android:importantForAccessibility="yes"
+                android:accessibilityLiveRegion="polite" />
 
             <TextView
                 android:id="@+id/weather_condition"
@@ -72,7 +77,9 @@
                 android:layout_column="0"
                 android:layout_columnWeight="1"
                 android:layout_margin="4dp"
-                android:text="Weather\nDetails" />
+                android:text="Weather\nDetails"
+                android:contentDescription="@string/desc_weather_details"
+                android:importantForAccessibility="yes" />
 
             <Button
                 android:id="@+id/btn_preparedness"
@@ -83,7 +90,9 @@
                 android:layout_column="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="4dp"
-                android:text="Preparedness\nPlan" />
+                android:text="Preparedness\nPlan"
+                android:contentDescription="@string/desc_preparedness_plan"
+                android:importantForAccessibility="yes" />
 
             <Button
                 android:id="@+id/btn_checklist"
@@ -94,7 +103,9 @@
                 android:layout_column="0"
                 android:layout_columnWeight="1"
                 android:layout_margin="4dp"
-                android:text="Emergency\nChecklist" />
+                android:text="Emergency\nChecklist"
+                android:contentDescription="@string/desc_emergency_checklist"
+                android:importantForAccessibility="yes" />
 
             <Button
                 android:id="@+id/btn_travel_advisory"
@@ -105,7 +116,9 @@
                 android:layout_column="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="4dp"
-                android:text="Travel\nAdvisory" />
+                android:text="Travel\nAdvisory"
+                android:contentDescription="@string/desc_travel_advisory"
+                android:importantForAccessibility="yes" />
 
             <Button
                 android:id="@+id/btn_community"
@@ -116,7 +129,9 @@
                 android:layout_column="0"
                 android:layout_columnWeight="1"
                 android:layout_margin="4dp"
-                android:text="Community\nAssistance" />
+                android:text="Community\nAssistance"
+                android:contentDescription="@string/desc_community_assistance"
+                android:importantForAccessibility="yes" />
 
             <Button
                 android:id="@+id/btn_ai_assistant"
@@ -127,7 +142,9 @@
                 android:layout_column="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="4dp"
-                android:text="AI Safety\nAssistant" />
+                android:text="AI Safety\nAssistant"
+                android:contentDescription="@string/desc_ai_safety_assistant"
+                android:importantForAccessibility="yes" />
 
         </GridLayout>
 

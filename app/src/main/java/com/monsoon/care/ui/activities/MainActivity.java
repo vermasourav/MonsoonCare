@@ -2,6 +2,7 @@ package com.monsoon.care.ui.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -55,6 +56,17 @@ public class MainActivity extends AppCompatActivity {
         alertAdapter = new AlertAdapter(new ArrayList<>());
         alertsRecyclerView.setAdapter(alertAdapter);
     }
+        // Accessibility improvements: announce temperature updates and provide descriptions
+        weatherTemp.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
+        weatherIcon.setContentDescription(getString(R.string.desc_weather_icon));
+
+        // Ensure buttons have content descriptions for TalkBack
+        weatherDetailBtn.setContentDescription(getString(R.string.desc_weather_details));
+        preparednessPlanBtn.setContentDescription(getString(R.string.desc_preparedness_plan));
+        checklistBtn.setContentDescription(getString(R.string.desc_emergency_checklist));
+        travelAdvisoryBtn.setContentDescription(getString(R.string.desc_travel_advisory));
+        communityBtn.setContentDescription(getString(R.string.desc_community_assistance));
+        aiAssistantBtn.setContentDescription(getString(R.string.desc_ai_safety_assistant));
 
     private void setupClickListeners() {
         weatherDetailBtn.setOnClickListener(v ->
